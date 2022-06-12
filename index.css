@@ -2,6 +2,11 @@
     color: grey;
 }
 
-.list-group {
+.rezept {
     border: none;
+}
+
+.zutaten-liste {
+    margin-top: none;
+    list-style-type: l
 }
