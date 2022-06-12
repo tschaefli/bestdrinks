@@ -2,11 +2,29 @@
     color: grey;
 }
 
-.rezept {
-    border: none;
+.btn-close {
+    margin-top: 2rem;
 }
 
 .zutaten-liste {
     margin-top: none;
-    list-style-type: l
+    list-style-type: square;
+    color: grey;
+    border: none;
+}
+
+.steps {
+    margin-top: none;
+    list-style-type: upper-roman;
+    color: grey;
+    border: none;
+    margin-left: 1rem;
+}
+
+.card-text {
+    margin-left: 1rem;
+}
+
+.rezept {
+    border: none !important;
 }
