@@ -4,156 +4,236 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bestdrinks.css">
     <title>Best Drinks</title>
     <script src="https://kit.fontawesome.com/b34eef831c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- Suchbar -->
-    <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top" aria-label="Second navbar example">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Best Drins</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-champagne-glasses text-info"></i> Best Drinks</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExample02">
-            <ul class="navbar-nav me-auto">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" href="#vodka">Vodka</a>
+                <a class="nav-link" aria-current="page" href="#gin">Gin</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#gin">Gin</a>
+                <a class="nav-link" aria-current="page" href="#rum">Rum</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#rum">Rum</a>
+                <a class="nav-link" aria-current="page" href="#tequila">Tequila</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#whiskey">Whiskey</a>
+                <a class="nav-link" aria-current="page" href="#whiskey">Whiskey</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tequila">Tequila</a>
+                <a class="nav-link" aria-current="page" href="#vodka">Vodka</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#others">Andere</a>
+                <a class="nav-link" aria-current="page" href="#andere">Andere</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#alkoholfrei">Alkoholfrei</a>
               </li>
             </ul>
-            <form role="search">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="text" id="searchbox" placeholder="Drinks..." aria-label="Suchen">
+              <button class="btn btn-outline-info" type="submit" id="searchstart">Suchen</button>
             </form>
           </div>
         </div>
       </nav>
 
-        <!-- Allgemeien Informationen -->
-        <div id="info" class="container mt-5">
-            <h2>Best Drinks</h2>
-            <p>Die beliebtesten Drinks mit ihren Rezepten kompakt mit Zutaten, Zubereitung und Dekor auf einer Webseite zusammegefasst. Die Perfekten Cocktails und Longdrinks für ihre nächste Party.</p>
-        </div>
-
-        <!-- Vodka basierte Drinks -->
-        <div id="vodka" class="mt-5">
-            <div class="container">
-                <h3>Drinks auf Vodka-Basis</h1>
-                <div class="row">
-
-                </div>                
-            </div>
-        </div>
-
-        <!-- Gin basierte Drinks -->
-        <div id="gin" class="mt-5">
-            <div class="container">
-                <h3>Drinks auf Gin-Basis</h1>
-                <div class="row">
-
-                </div>                
-            </div>
-        </div>
-
-        <!-- Rum basierte Drinks -->
-        <div id="rum" class="mt-5">
-            <div class="container">
-                <h3>Drinks auf Rum-Basis</h1>
-                <div class="row">
-
-                    <!-- Mojito -->
-                    <div id="mojito" class="col-12 col-md-6 col-lg-4">
-                        <div class="card" aria-hidden="true">
-                            <img src="images/Mojito.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h5>Mojito</h5>
-                                <p class="card-text">
-                                    Der Mojito ist einer der beliebtesten Cocktails der zum
-                                    grössten Teil aus Rum, Limette und Minze besteht.
-                                </p>
-                                <div class="grey">
-                                    <p><i class="fa-solid fa-glass-water"></i> Longdrink</p>
-                                </div>
-                                <a href="mojito.html" class="btn btn-outline-info">Rezept</a>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>                
-            </div>
-        </div>
-        
-        <!-- Whiskey basierte Drinks -->
-        <div id="whiskey" class="mt-5">
-            <div class="container">
-                <h3>Drinks auf Whiskey-Basis</h1>
-                <div class="row">
-
-                </div>                
-            </div>
-        </div>
-
-        <!-- Gin basierte Drinks -->
-        <div id="tequila" class="mt-5">
-            <div class="container">
-                <h3>Drinks auf Tequila-Basis</h1>
-                <div class="row">
-
-                    <!-- Tequila Sunrise -->
-                    <div id="tequilasunrise" class="col-12 col-md-6 col-lg-4">
-                        <div class="card" aria-hidden="true">
-                            <img src="images/loading.png" class="card-img-top">
-                            <div class="card-body">
-                                <h5>Tequila Sunrise</h5>
-                                <p class="card-text">
-                                    Der Tequlia Sunrise ist ein fruchtiger, süsser Cocktail aus Tequila,
-                                    Orangensaft und Grenadinsiroup. Er verdankt seinen Namen der charakteristischen
-                                    Farbabstufung von Gelb-Orange über Orange bis Orangenrot.
-                                </p>
-                                <div class="grey">
-                                    <p><i class="fa-solid fa-glass-water"></i> Longdrink</p>
-                                </div>
-                                <a href="tequilasunrise.html" class="btn btn-outline-info">Rezept</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>                
-            </div>
-        </div>
-
-        <!-- Anders basierte Drinks -->
-        <div id="others" clas="mt-5">
-            <div class="container">
-                <h3>Drinks auf anderer Schnapps-Basis</h1>
-                <div class="row">
-
-                </div>                
-            </div>
-        </div>
-
-
+    <div class="container heading">
+        <h1><i class="fa-solid fa-champagne-glasses text-info"></i> Best Drinks</h1>
+        <p>
+          Die beliebtesten Drinks mit ihren Rezepten kompakt mit Zutaten, Zubereitung und Dekor auf einer
+          Webseite zusammegefasst. Die Perfekten Cocktails und Longdrinks für ihre nächste Party.
+        </p>
     </div>
-</div>
-    
-    
+
+      <!-- Gin -->
+      <div id="gin">
+        <div class="container">
+            <h2 class="mt-3">Cockteils mit Gin</h4>
+            <div class="row">
+
+            </div>
+        </div>
+      </div>
+
+      <!-- Rum -->
+      <div id="rum">
+        <div class="container">
+            <h3 class="mt-3">Cocktails mit Rum</h3>
+            <div class="row">
+                
+                <!-- Mojito -->
+                <div id="mojito" class="col-12 col-md-6 col-lg-4">
+                      <div class="card" aria-hidden="true">
+                          <img src="images/mochijto.jpg" class="card-img-top">
+                          <div class="card-body">
+                              <h5 class="card-title">Mojito</h5>
+                              <p class="card-text">
+                                Der Mojito ist ein Cocktail aus hellem kubanischen Rum, 
+                                Limettensaft, Minze, Rohrzucker und Sodawasser. Er gehört
+                                zu den bekanntesten Mixgetränken.
+                              </p>
+                              <div class="information grey">
+                                  <p>
+                                    <i class="fa-solid fa-glass-water"></i> Longdrink | 
+                                    <i class="fa-solid fa-flask"></i> Leicht
+                                  </p>
+                                  <p>
+                                    <i class="fa-solid fa-stopwatch"></i> 5 Minuten | 
+                                    <i class="fa-solid fa-book"></i> Klassiker
+                                  </p>
+                              </div>
+                              <a href="mojito.html" class="btn btn-outline-info">Rezept</a>
+                          </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+      <!-- Tequila -->
+      <div id="tequila">
+        <div class="container">
+            <h3 class="mt-3">Cocktails mit Tequila</h3>
+            <div class="row">
+
+                <!-- Tequila Sunrise -->
+                <div id="tequilasunrise" class="col-12 col-md-6 col-lg-4">
+                    <div class="card" aria-hidden="true">
+                        <img src="images/tequilasunrise.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tequila Sunrise</h5>
+                            <p class="card-text">
+                              Der Tequila Sunrise ist ein fruchtiger, süßer Cocktail aus Tequila, Orangensaft
+                              und Grenadine. Er verdankt seinen Namen der charakteristischen Farbabstufung von
+                              Gelb-Orange über Orange bis Orangerot.
+                            </p>
+                            <div class="information grey">
+                                <p>
+                                  <i class="fa-solid fa-glass-water"></i> Longdrink | 
+                                  <i class="fa-solid fa-flask"></i> Leicht
+                                </p>
+                                <p>
+                                  <i class="fa-solid fa-stopwatch"></i> 5 Minuten | 
+                                  <i class="fa-solid fa-book"></i> Klassiker
+                                </p>
+                            </div>
+                            <a href="tequilasunrise.html" class="btn btn-outline-info">Rezept</a>
+                        </div>
+                    </div>
+              </div>
+               
+            </div>
+        </div>
+      </div>
+
+      <!-- Whiskey -->
+      <div id="whiskey">
+        <div class="container">
+            <h3 class="mt-3">Cocktails mit Whiskey</h3>
+            <div class="row">
+                
+            </div>
+        </div>
+      </div>
+
+      <!-- Vodka -->
+      <div id="vodka">
+        <div class="container">
+            <h3 class="mt-3">Cocktails mit Vodka</h3>
+            <div class="row">
+                
+            </div>            
+        </div>
+      </div>
+
+      <!-- Andere -->
+      <div id="andere">
+        <div class="container">
+            <h3 class="mt-3">Cocktails mit anderen Spirituouse</h3>
+            <div class="row">
+
+                <!-- Caipirinha -->
+                <div id="caipirinha" class="col-12 col-md-6 col-lg-4">
+                    <div class="card" aria-hidden="true">
+                        <img src="images/caipirinha.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Caipirinha</h5>
+                            <p class="card-text">
+                              Caipirinha ist ein aus Brasilien stammender Cocktail aus Cachaça, Limette,
+                              Zucker und Eis. Im deutschen Sprachraum ist auch die Kurzbezeichnung Caipi
+                              üblich.
+                            </p>
+                            <div class="information grey">
+                                <p>
+                                  <i class="fa-solid fa-glass-water"></i> Sours | 
+                                  <i class="fa-solid fa-flask"></i> Leicht
+                                </p>
+                                <p>
+                                  <i class="fa-solid fa-stopwatch"></i> 5 Minuten | 
+                                  <i class="fa-solid fa-book"></i> Klassiker
+                                </p>
+                            </div>
+                            <a href="caipirinha.html" class="btn btn-outline-info">Rezept</a>
+                        </div>
+                    </div>
+              </div>
+
+
+              <!-- Campariorange -->
+              <div id="campariorange" class="col-12 col-md-6 col-lg-4">
+                  <div class="card" aria-hidden="true">
+                      <img src="images/campariorange.jpg" class="card-img-top">
+                      <div class="card-body">
+                          <h5 class="card-title">Campari Orange</h5>
+                          <p class="card-text">
+                            Campari Orange ist ein typisch italienischer Bitter-Aperitif. Er besteht aus
+                            zu den grössten Teilen aus dem italientischen Campari-Likör und Orangensaft.
+                            Der Campari Orange gehört zu den Barklassiker.
+                          </p>
+                          <div class="information grey">
+                              <p>
+                                <i class="fa-solid fa-glass-water"></i> Longdrink | 
+                                <i class="fa-solid fa-flask"></i> Leicht
+                              </p>
+                              <p>
+                                <i class="fa-solid fa-stopwatch"></i> 5 Minuten | 
+                                <i class="fa-solid fa-book"></i> Klassiker
+                              </p>
+                          </div>
+                          <a href="campariorange.html" class="btn btn-outline-info">Rezept</a>
+                      </div>
+                  </div>
+            </div>
+
+                
+            </div>            
+        </div>
+      </div>
+
+      <!-- Alkoholfrei -->
+      <div id="alkoholfrei">
+        <div class="container">
+            <h3 class="mt-3">Alkoholfreie Cocktails</h3>
+            <div class="row">
+                
+            </div>            
+        </div>
+      </div>
+  
+      <script src="bestdrinks.js"></script>
 </body>
 </html>

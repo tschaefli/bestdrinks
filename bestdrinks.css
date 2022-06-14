@@ -1,12 +1,28 @@
+.heading {
+    margin-top: 6rem;
+}
+
 .grey {
-    color: grey;
+    color: rgb(166, 164, 164); 
+}
+
+.reciep {
+    border: none !important;
 }
 
 .btn-close {
     margin-top: 2rem;
 }
 
-.zutaten-liste {
+.categories {
+    color: grey !important;
+}
+
+.reciep-text {
+    margin-left: 1rem;
+}
+
+.ingredient-list {
     margin-top: none;
     list-style-type: square;
     color: grey;
@@ -19,12 +35,4 @@
     color: grey;
     border: none;
     margin-left: 1rem;
-}
-
-.rezept-text {
-    margin-left: 1rem;
-}
-
-.rezept {
-    border: none !important;
 }

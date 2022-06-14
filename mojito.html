@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bestdrinks.css">
     <title>Best Drinks</title>
     <script src="https://kit.fontawesome.com/b34eef831c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -12,28 +12,34 @@
 <body>
 
     <!-- Return -->
-    <div class="container rezept">
+    <div class="container reciep no-border">
         <div class="row">
             <div class="return mt-1">
-                <a href="index.html"><button type="button" class="btn-close"></button></a>
+                <a href="index.html#mojito"><button type="button" class="btn-close"></button></a>
             </div>
         </div>
         <h1 class="mt-4">Mojito</h1>
 
-        <div class="card mb-3 rezept">
+        <div class="card mb-4 reciep">
             <div class="row g-0">
-                <!-- Image -->
-                <div class="col-md-4">
-                    <img src="images/Mojito.jpg" class="img-fluid rounded-start rounded-end">
+                <!-- Bild & Kategorien -->
+                <div class="col-lg-5">
+                    <img src="images/mochijto.jpg" class="img-fluid rounded-start rounded-end">
+                    <p class="categories mt-3">
+                        <i class="fa-solid fa-glass-water"></i> Longdrink |
+                        <i class="fa-solid fa-flask"></i> Leicht | 
+                        <i class="fa-solid fa-stopwatch"></i> 5 Minuten |
+                        <i class="fa-solid fa-book"></i> Klassiker                 
+                    </p>
                 </div>
                 <!-- Rezept -->
-                <div class="col-md-8">
+                <div class="col-lg-7">
                     <div class="card-body">
 
                         <!-- Zutaten -->
                         <h4 class="card-title grey bold">Zutaten</h4>
-                        <div class="card-text rezept-text">
-                            <ul class="list-group zutaten-liste">
+                        <div class="card-text reciep-text">
+                            <ul class="list-group ingredient-list grey">
                                 <li>5 cl    weisser Rum</li>
                                 <li>6 cl    Sodawasser</li>
                                 <li>½ Stk   Limette</li>
